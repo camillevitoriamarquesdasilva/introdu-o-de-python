@@ -1,0 +1,114 @@
+/* Importação de uma fonte para deixar o design mais moderno */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto+Mono&display=swap');
+
+:root {
+    --cor-principal: #306998; /* Azul Python */
+    --cor-secundaria: #ffd43b; /* Amarelo Python */
+    --cor-fundo: #f4f7f6;
+    --cor-texto: #333;
+    --cor-codigo-fundo: #282c34; /* Fundo escuro para código */
+    --cor-codigo-texto: #abb2bf; /* Cor clara para texto do código */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    padding-top: 60px; /* Espaço para o header fixo */
+}
+
+/* --- HEADER (Cabeçalho) --- */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+/* --- MAIN (Conteúdo Principal) --- */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: var(--cor-principal);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+/* --- LISTA DE VANTAGENS --- */
+.introducao ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.introducao li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.introducao li:last-child {
+    border-bottom: none;
+}
+
+/* --- BLOCO DE CÓDIGO --- */
+.codigo-bloco {
+    background-color: var(--cor-codigo-fundo);
+    color: var(--cor-codigo-texto);
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+    overflow-x: auto; /* Para código que exceda a largura */
+}
+
+.codigo-bloco code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1em;
+}
+
+.resultado {
+    font-style: italic;
+    color: #008000; /* Verde para resultado */
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* --- FOOTER (Rodapé) --- */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: var(--cor-principal);
+    color: white;
+    margin-top: 40px;
+}
